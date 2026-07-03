@@ -1,0 +1,24 @@
+name: Watchdog Beta
+on:
+  schedule:
+    - cron: '2-59/10 * * * *'  # Every 10 minutes, offset by 2
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: pip install -r requirements.txt
+      - run: python watchdog.py
+        env:
+          WATCHDOG_NAME: "Watchdog_Beta"
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
