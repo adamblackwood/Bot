@@ -1,7 +1,7 @@
 {
   "active_worker": "Worker_C",
   "worker_start_time": "2026-07-20 10:37:25 UTC",
-  "last_heartbeat": "2026-07-20 10:56:57 UTC",
+  "last_heartbeat": "2026-07-20 10:57:58 UTC",
   "last_analysis_time": "2026-07-20 10:52:49 UTC",
   "status": "RUNNING",
   "backup_attempts": 0
