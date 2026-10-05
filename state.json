@@ -1,8 +1,8 @@
 {
-  "active_worker": "Worker_A",
-  "worker_start_time": "2026-10-05 04:44:19 UTC",
-  "last_heartbeat": "2026-10-05 10:14:02 UTC",
+  "active_worker": "Worker_B",
+  "worker_start_time": "2026-10-05 11:10:31 UTC",
+  "last_heartbeat": "2026-10-05 11:10:31 UTC",
   "last_analysis_time": "2026-10-05 10:07:49 UTC",
-  "status": "HARD_STOP",
+  "status": "RUNNING",
   "backup_attempts": 3
 }
