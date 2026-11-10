@@ -3,6 +3,6 @@
   "worker_start_time": "2026-11-10 06:16:52 UTC",
   "last_heartbeat": "2026-11-10 11:46:44 UTC",
   "last_analysis_time": "2026-11-10 11:43:35 UTC",
-  "status": "RUNNING",
+  "status": "HARD_STOP",
   "backup_attempts": 3
 }
